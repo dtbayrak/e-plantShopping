@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addItem, removeItem, updateQuantity } from '../features/CartSlice';
 import '../styles/CartItem.css';
 
-const CartItem = ({ onContinueShopping, removeFromCart }) => {
+const CartItem = ({ onContinueShopping }) => {
   const cartItems = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
 
